@@ -1,0 +1,205 @@
+!define BLANK ""
+c:\code\engines\lib\immerse\ide_data\imr_log.obj : c:\code\engines\lib\immer&
+se\code\callstatus\imr_log.cpp .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ *wpp386 ..\code\callstatus\imr_log.cpp -i=c:\code\dx6sdk\include;C:\code\WA&
+TCOM\h;C:\code\WATCOM\h\nt -w0 -e25 -zq -otexan -of -ol -ol+ -om -oc -oi -oa&
+ -oe20 -d2 -5r -bt=nt -mf
+
+c:\code\engines\lib\immerse\ide_data\imr_camera.obj : c:\code\engines\lib\im&
+merse\code\core\imr_camera.cpp .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ *wpp386 ..\code\core\imr_camera.cpp -i=c:\code\dx6sdk\include;C:\code\WATCO&
+M\h;C:\code\WATCOM\h\nt -w0 -e25 -zq -otexan -of -ol -ol+ -om -oc -oi -oa -o&
+e20 -d2 -5r -bt=nt -mf
+
+c:\code\engines\lib\immerse\ide_data\imr_collide.obj : c:\code\engines\lib\i&
+mmerse\code\core\imr_collide.cpp .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ *wpp386 ..\code\core\imr_collide.cpp -i=c:\code\dx6sdk\include;C:\code\WATC&
+OM\h;C:\code\WATCOM\h\nt -w0 -e25 -zq -otexan -of -ol -ol+ -om -oc -oi -oa -&
+oe20 -d2 -5r -bt=nt -mf
+
+c:\code\engines\lib\immerse\ide_data\imr_geom_light.obj : c:\code\engines\li&
+b\immerse\code\core\imr_geom_light.cpp .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ *wpp386 ..\code\core\imr_geom_light.cpp -i=c:\code\dx6sdk\include;C:\code\W&
+ATCOM\h;C:\code\WATCOM\h\nt -w0 -e25 -zq -otexan -of -ol -ol+ -om -oc -oi -o&
+a -oe20 -d2 -5r -bt=nt -mf
+
+c:\code\engines\lib\immerse\ide_data\imr_geom_model.obj : c:\code\engines\li&
+b\immerse\code\core\imr_geom_model.cpp .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ *wpp386 ..\code\core\imr_geom_model.cpp -i=c:\code\dx6sdk\include;C:\code\W&
+ATCOM\h;C:\code\WATCOM\h\nt -w0 -e25 -zq -otexan -of -ol -ol+ -om -oc -oi -o&
+a -oe20 -d2 -5r -bt=nt -mf
+
+c:\code\engines\lib\immerse\ide_data\imr_geom_object.obj : c:\code\engines\l&
+ib\immerse\code\core\imr_geom_object.cpp .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ *wpp386 ..\code\core\imr_geom_object.cpp -i=c:\code\dx6sdk\include;C:\code\&
+WATCOM\h;C:\code\WATCOM\h\nt -w0 -e25 -zq -otexan -of -ol -ol+ -om -oc -oi -&
+oa -oe20 -d2 -5r -bt=nt -mf
+
+c:\code\engines\lib\immerse\ide_data\imr_geom_poly.obj : c:\code\engines\lib&
+\immerse\code\core\imr_geom_poly.cpp .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ *wpp386 ..\code\core\imr_geom_poly.cpp -i=c:\code\dx6sdk\include;C:\code\WA&
+TCOM\h;C:\code\WATCOM\h\nt -w0 -e25 -zq -otexan -of -ol -ol+ -om -oc -oi -oa&
+ -oe20 -d2 -5r -bt=nt -mf
+
+c:\code\engines\lib\immerse\ide_data\imr_geom_prim_point.obj : c:\code\engin&
+es\lib\immerse\code\core\imr_geom_prim_point.cpp .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ *wpp386 ..\code\core\imr_geom_prim_point.cpp -i=c:\code\dx6sdk\include;C:\c&
+ode\WATCOM\h;C:\code\WATCOM\h\nt -w0 -e25 -zq -otexan -of -ol -ol+ -om -oc -&
+oi -oa -oe20 -d2 -5r -bt=nt -mf
+
+c:\code\engines\lib\immerse\ide_data\imr_interface.obj : c:\code\engines\lib&
+\immerse\code\core\imr_interface.cpp .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ *wpp386 ..\code\core\imr_interface.cpp -i=c:\code\dx6sdk\include;C:\code\WA&
+TCOM\h;C:\code\WATCOM\h\nt -w0 -e25 -zq -otexan -of -ol -ol+ -om -oc -oi -oa&
+ -oe20 -d2 -5r -bt=nt -mf
+
+c:\code\engines\lib\immerse\ide_data\imr_material.obj : c:\code\engines\lib\&
+immerse\code\core\imr_material.cpp .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ *wpp386 ..\code\core\imr_material.cpp -i=c:\code\dx6sdk\include;C:\code\WAT&
+COM\h;C:\code\WATCOM\h\nt -w0 -e25 -zq -otexan -of -ol -ol+ -om -oc -oi -oa &
+-oe20 -d2 -5r -bt=nt -mf
+
+c:\code\engines\lib\immerse\ide_data\imr_matrix.obj : c:\code\engines\lib\im&
+merse\code\core\imr_matrix.cpp .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ *wpp386 ..\code\core\imr_matrix.cpp -i=c:\code\dx6sdk\include;C:\code\WATCO&
+M\h;C:\code\WATCOM\h\nt -w0 -e25 -zq -otexan -of -ol -ol+ -om -oc -oi -oa -o&
+e20 -d2 -5r -bt=nt -mf
+
+c:\code\engines\lib\immerse\ide_data\imr_palette.obj : c:\code\engines\lib\i&
+mmerse\code\core\imr_palette.cpp .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ *wpp386 ..\code\core\imr_palette.cpp -i=c:\code\dx6sdk\include;C:\code\WATC&
+OM\h;C:\code\WATCOM\h\nt -w0 -e25 -zq -otexan -of -ol -ol+ -om -oc -oi -oa -&
+oe20 -d2 -5r -bt=nt -mf
+
+c:\code\engines\lib\immerse\ide_data\imr_pipeline.obj : c:\code\engines\lib\&
+immerse\code\core\imr_pipeline.cpp .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ *wpp386 ..\code\core\imr_pipeline.cpp -i=c:\code\dx6sdk\include;C:\code\WAT&
+COM\h;C:\code\WATCOM\h\nt -w0 -e25 -zq -otexan -of -ol -ol+ -om -oc -oi -oa &
+-oe20 -d2 -5r -bt=nt -mf
+
+c:\code\engines\lib\immerse\ide_data\imr_rdfmngr.obj : c:\code\engines\lib\i&
+mmerse\code\core\imr_rdfmngr.cpp .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ *wpp386 ..\code\core\imr_rdfmngr.cpp -i=c:\code\dx6sdk\include;C:\code\WATC&
+OM\h;C:\code\WATCOM\h\nt -w0 -e25 -zq -otexan -of -ol -ol+ -om -oc -oi -oa -&
+oe20 -d2 -5r -bt=nt -mf
+
+c:\code\engines\lib\immerse\ide_data\imr_resource.obj : c:\code\engines\lib\&
+immerse\code\core\imr_resource.cpp .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ *wpp386 ..\code\core\imr_resource.cpp -i=c:\code\dx6sdk\include;C:\code\WAT&
+COM\h;C:\code\WATCOM\h\nt -w0 -e25 -zq -otexan -of -ol -ol+ -om -oc -oi -oa &
+-oe20 -d2 -5r -bt=nt -mf
+
+c:\code\engines\lib\immerse\ide_data\imr_table.obj : c:\code\engines\lib\imm&
+erse\code\core\imr_table.cpp .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ *wpp386 ..\code\core\imr_table.cpp -i=c:\code\dx6sdk\include;C:\code\WATCOM&
+\h;C:\code\WATCOM\h\nt -w0 -e25 -zq -otexan -of -ol -ol+ -om -oc -oi -oa -oe&
+20 -d2 -5r -bt=nt -mf
+
+c:\code\engines\lib\immerse\ide_data\imr_time.obj : c:\code\engines\lib\imme&
+rse\code\foundation\imr_time.cpp .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ *wpp386 ..\code\foundation\imr_time.cpp -i=c:\code\dx6sdk\include;C:\code\W&
+ATCOM\h;C:\code\WATCOM\h\nt -w0 -e25 -zq -otexan -of -ol -ol+ -om -oc -oi -o&
+a -oe20 -d2 -5r -bt=nt -mf
+
+c:\code\engines\lib\immerse\ide_data\imr_gm_cameraop.obj : c:\code\engines\l&
+ib\immerse\code\geommngr\imr_gm_cameraop.cpp .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ *wpp386 ..\code\geommngr\imr_gm_cameraop.cpp -i=c:\code\dx6sdk\include;C:\c&
+ode\WATCOM\h;C:\code\WATCOM\h\nt -w0 -e25 -zq -otexan -of -ol -ol+ -om -oc -&
+oi -oa -oe20 -d2 -5r -bt=nt -mf
+
+c:\code\engines\lib\immerse\ide_data\imr_gm_figure.obj : c:\code\engines\lib&
+\immerse\code\geommngr\imr_gm_figure.cpp .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ *wpp386 ..\code\geommngr\imr_gm_figure.cpp -i=c:\code\dx6sdk\include;C:\cod&
+e\WATCOM\h;C:\code\WATCOM\h\nt -w0 -e25 -zq -otexan -of -ol -ol+ -om -oc -oi&
+ -oa -oe20 -d2 -5r -bt=nt -mf
+
+c:\code\engines\lib\immerse\ide_data\imr_gm_interface.obj : c:\code\engines\&
+lib\immerse\code\geommngr\imr_gm_interface.cpp .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ *wpp386 ..\code\geommngr\imr_gm_interface.cpp -i=c:\code\dx6sdk\include;C:\&
+code\WATCOM\h;C:\code\WATCOM\h\nt -w0 -e25 -zq -otexan -of -ol -ol+ -om -oc &
+-oi -oa -oe20 -d2 -5r -bt=nt -mf
+
+c:\code\engines\lib\immerse\ide_data\imr_renderer.obj : c:\code\engines\lib\&
+immerse\code\rendcore\directx6\imr_renderer.cpp .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ *wpp386 ..\code\rendcore\directx6\imr_renderer.cpp -i=c:\code\dx6sdk\includ&
+e;C:\code\WATCOM\h;C:\code\WATCOM\h\nt -w0 -e25 -zq -otexan -of -ol -ol+ -om&
+ -oc -oi -oa -oe20 -d2 -5r -bt=nt -mf
+
+c:\code\engines\lib\immerse\ide_data\imr.lib : c:\code\engines\lib\immerse\i&
+de_data\imr_log.obj c:\code\engines\lib\immerse\ide_data\imr_camera.obj c:\c&
+ode\engines\lib\immerse\ide_data\imr_collide.obj c:\code\engines\lib\immerse&
+\ide_data\imr_geom_light.obj c:\code\engines\lib\immerse\ide_data\imr_geom_m&
+odel.obj c:\code\engines\lib\immerse\ide_data\imr_geom_object.obj c:\code\en&
+gines\lib\immerse\ide_data\imr_geom_poly.obj c:\code\engines\lib\immerse\ide&
+_data\imr_geom_prim_point.obj c:\code\engines\lib\immerse\ide_data\imr_inter&
+face.obj c:\code\engines\lib\immerse\ide_data\imr_material.obj c:\code\engin&
+es\lib\immerse\ide_data\imr_matrix.obj c:\code\engines\lib\immerse\ide_data\&
+imr_palette.obj c:\code\engines\lib\immerse\ide_data\imr_pipeline.obj c:\cod&
+e\engines\lib\immerse\ide_data\imr_rdfmngr.obj c:\code\engines\lib\immerse\i&
+de_data\imr_resource.obj c:\code\engines\lib\immerse\ide_data\imr_table.obj &
+c:\code\engines\lib\immerse\ide_data\imr_time.obj c:\code\engines\lib\immers&
+e\ide_data\imr_gm_cameraop.obj c:\code\engines\lib\immerse\ide_data\imr_gm_f&
+igure.obj c:\code\engines\lib\immerse\ide_data\imr_gm_interface.obj c:\code\&
+engines\lib\immerse\ide_data\imr_renderer.obj .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ %create imr.lb1
+!ifneq BLANK "imr_log.obj imr_camera.obj imr_collide.obj imr_geom_light.obj &
+imr_geom_model.obj imr_geom_object.obj imr_geom_poly.obj imr_geom_prim_point&
+.obj imr_interface.obj imr_material.obj imr_matrix.obj imr_palette.obj imr_p&
+ipeline.obj imr_rdfmngr.obj imr_resource.obj imr_table.obj imr_time.obj imr_&
+gm_cameraop.obj imr_gm_figure.obj imr_gm_interface.obj imr_renderer.obj"
+ @for %i in (imr_log.obj imr_camera.obj imr_collide.obj imr_geom_light.obj i&
+mr_geom_model.obj imr_geom_object.obj imr_geom_poly.obj imr_geom_prim_point.&
+obj imr_interface.obj imr_material.obj imr_matrix.obj imr_palette.obj imr_pi&
+peline.obj imr_rdfmngr.obj imr_resource.obj imr_table.obj imr_time.obj imr_g&
+m_cameraop.obj imr_gm_figure.obj imr_gm_interface.obj imr_renderer.obj) do @&
+%append imr.lb1 +'%i'
+!endif
+!ifneq BLANK ""
+ @for %i in () do @%append imr.lb1 +'%i'
+!endif
+ *wlib -b -c -n -q -p=512 imr.lib @imr.lb1
+

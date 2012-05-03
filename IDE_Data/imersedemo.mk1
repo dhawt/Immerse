@@ -1,0 +1,23 @@
+!define BLANK ""
+h:\lib\immerse\ide_data\demo.obj : h:\lib\immerse\demo\demo.cpp .AUTODEPEND
+ @h:
+ cd h:\lib\immerse\ide_data
+ *wpp386 ..\demo\demo.cpp -i=D:\h;D:\h\nt -w4 -e25 -zq -od -d2 -5r -bt=nt -m&
+f
+
+h:\lib\immerse\ide_data\imersedemo.exe : h:\lib\immerse\ide_data\demo.obj h:&
+\lib\winlayer\lib\winlayer.lib .AUTODEPEND
+ @h:
+ cd h:\lib\immerse\ide_data
+ @%write imersedemo.lk1 FIL demo.obj
+ @%append imersedemo.lk1 LIBR ..\..\winlayer\lib\winlayer.lib
+!ifneq BLANK ""
+ *wlib -q -n -b imersedemo.imp 
+ @%append imersedemo.lk1 LIBR imersedemo.imp
+!endif
+!ifneq BLANK ""
+ @%append imersedemo.lk1 op resource=
+!endif
+ *wlink name imersedemo d all op inc SYS nt_win op m op maxe=25 op q op symf&
+ @imersedemo.lk1
+

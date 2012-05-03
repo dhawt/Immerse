@@ -1,0 +1,11 @@
+..\code\core\imr_resource.cpp(11): Warning! W698: col(10) pre-compiled header file being recreated (different #include file) 
+..\code\core\..\Core\IMR_RDFMngr.hpp(36): Warning! W836: col(12) symbol has different type than previous symbol in same declaration 
+..\code\core\..\Core\IMR_RDFMngr.hpp(36): Note! N837: col(12) companion definition is 'IMR_RDFListEnt::Type' 
+..\code\core\..\Core\IMR_RDFMngr.hpp(36): Note! N392: col(12) 'char IMR_RDFListEnt::Type[4]' defined in: ..\code\core\..\Core\IMR_RDFMngr.hpp(35) (col 12) 
+..\code\core\..\Core\IMR_RDFMngr.hpp(37): Warning! W836: col(12) symbol has different type than previous symbol in same declaration 
+..\code\core\..\Core\IMR_RDFMngr.hpp(37): Note! N837: col(12) companion definition is 'IMR_RDFListEnt::Type' 
+..\code\core\..\Core\IMR_RDFMngr.hpp(37): Note! N392: col(12) 'char IMR_RDFListEnt::Type[4]' defined in: ..\code\core\..\Core\IMR_RDFMngr.hpp(35) (col 12) 
+..\code\core\imr_resource.cpp(21): Warning! W836: col(19) symbol has different type than previous symbol in same declaration 
+..\code\core\imr_resource.cpp(21): Note! N837: col(19) companion definition is 'Buffer' 
+..\code\core\imr_resource.cpp(21): Note! N392: col(19) 'char Buffer[120]' in 'int IMR_ResourceManager::LoadResources( char * )' defined in: ..\code\core\imr_resource.cpp(21) (col 6) 
+..\code\core\imr_resource.cpp(24): Warning! W391: col(10) assignment found in boolean expression 

@@ -1,0 +1,38 @@
+!define BLANK ""
+c:\code\engines\lib\immerse\ide_data\quadset.obj : c:\code\engines\lib\immer&
+se\demo\quadset.asm .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ *wasm ..\demo\quadset.asm -i=C:\code\WATCOM\h;C:\code\WATCOM\h\nt -mf -5r -&
+w4 -e25 -zq
+
+c:\code\engines\lib\immerse\ide_data\demo.obj : c:\code\engines\lib\immerse\&
+demo\demo.cpp .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ *wpp386 ..\demo\demo.cpp -i=c:\code\dx6sdk\include;C:\code\WATCOM\h;C:\code&
+\WATCOM\h\nt -fh -w0 -e25 -zq -otexan -ol -ol+ -om -oc -oi -oa -or -oe20 -5r&
+ -bt=nt -mf
+
+c:\code\engines\lib\immerse\ide_data\immersedemo.exe : c:\code\engines\lib\i&
+mmerse\ide_data\quadset.obj c:\code\engines\lib\immerse\ide_data\demo.obj c:&
+\code\dx7sdk\lib\d3dim.lib c:\code\dx7sdk\lib\ddraw.lib c:\code\dx7sdk\lib\d&
+sound.lib c:\code\engines\lib\gfxlib\lib\gfxlib.lib c:\code\engines\lib\winl&
+ayer\lib\winlayer.lib c:\code\engines\lib\immerse\ide_data\imr.lib .AUTODEPE&
+ND
+ @c:
+ cd c:\code\engines\lib\immerse\ide_data
+ @%write immersedemo.lk1 FIL quadset.obj,demo.obj
+ @%append immersedemo.lk1 LIBR ..\..\..\..\dx7sdk\lib\d3dim.lib,..\..\..\..\&
+dx7sdk\lib\ddraw.lib,..\..\..\..\dx7sdk\lib\dsound.lib,..\..\gfxlib\lib\gfxl&
+ib.lib,..\..\winlayer\lib\winlayer.lib,imr.lib
+!ifneq BLANK ""
+ *wlib -q -n -b immersedemo.imp 
+ @%append immersedemo.lk1 LIBR immersedemo.imp
+!endif
+!ifneq BLANK ""
+ @%append immersedemo.lk1 op resource=
+!endif
+ *wlink name immersedemo d all op inc SYS nt_win op m op maxe=25 op q op sym&
+f @immersedemo.lk1
+

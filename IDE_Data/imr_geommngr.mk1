@@ -1,0 +1,21 @@
+!define BLANK ""
+h:\lib\immerse\ide_data\imr_gm_interface.obj : h:\lib\immerse\geommngr\imr_g&
+m_interface.cpp .AUTODEPEND
+ @h:
+ cd h:\lib\immerse\ide_data
+ *wpp386 ..\geommngr\imr_gm_interface.cpp -i=c:\cdevelop\watcom\h;c:\cdevelo&
+p\watcom\h\nt -fh -w0 -e25 -zq -od -d2 -5r -bt=nt -mf
+
+h:\lib\immerse\ide_data\imr_geommngr.lib : h:\lib\immerse\ide_data\imr_gm_in&
+terface.obj .AUTODEPEND
+ @h:
+ cd h:\lib\immerse\ide_data
+ %create imr_geommngr.lb1
+!ifneq BLANK "imr_gm_interface.obj"
+ @for %i in (imr_gm_interface.obj) do @%append imr_geommngr.lb1 +'%i'
+!endif
+!ifneq BLANK ""
+ @for %i in () do @%append imr_geommngr.lb1 +'%i'
+!endif
+ *wlib -b -c -n -q -p=512 imr_geommngr.lib @imr_geommngr.lb1
+

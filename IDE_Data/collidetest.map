@@ -1,0 +1,1255 @@
+WATCOM Linker Version 11.0
+Copyright by Sybase, Inc., and its subsidiaries, 1985, 1997.
+Created on:       01/05/17 12:08:09
+Executable Image: collidetest.exe
+creating a Windows NT windowed executable
+
+
+                        +------------+
+                        |   Groups   |
+                        +------------+
+
+Group                           Address              Size
+=====                           =======              ====
+
+.idata                          00435000             000008c9
+DGROUP                          00436000             000518d0
+
+
+
+                        +--------------+
+                        |   Segments   |
+                        +--------------+
+
+Segment                Class          Group          Address         Size
+=======                =====          =====          =======         ====
+
+BEGTEXT                CODE           AUTO           00401000        00000007
+_TEXT                  CODE           AUTO           00401010        00032f68
+TRANSFER CODE          CODE           AUTO           00433f78        000001e0
+.idata                 .idata         .idata         00435000        000008c9
+_NULL                  BEGDATA        DGROUP         00436000        00000004
+_AFTERNULL             BEGDATA        DGROUP         00436004        00000000
+_DATA                  DATA           DGROUP         00436004        00000cac
+CONST                  DATA           DGROUP         00436cb0        00003593
+CONST2                 DATA           DGROUP         0043a250        000004c0
+XIB                    DATA           DGROUP         0043a710        00000000
+XI                     DATA           DGROUP         0043a710        0000005a
+XIE                    DATA           DGROUP         0043a76a        00000000
+YIB                    DATA           DGROUP         0043a76a        00000000
+YI                     DATA           DGROUP         0043a76a        00000018
+YIE                    DATA           DGROUP         0043a782        00000000
+TIB                    DATA           DGROUP         0043a782        00000000
+TI                     DATA           DGROUP         0043a782        00000000
+TIE                    DATA           DGROUP         0043a782        00000000
+DATA                   DATA           DGROUP         0043a782        00000000
+DATA32                 DATA           DGROUP         0043a784        000002b4
+CONST32                CONST          DGROUP         0043b010        00000000
+_BSS                   BSS            DGROUP         0043b010        0003c8b8
+BSS32                  BSS            DGROUP         004778c8        00000000
+STACK                  STACK          DGROUP         004778d0        00010000
+
+
+                        +----------------+
+                        |   Memory Map   |
+                        +----------------+
+
+* = unreferenced symbol
++ = symbol only referenced locally
+
+Address        Symbol
+=======        ======
+
+Module: quadset.obj(c:\code\engines\lib\immerse\demo\quadset.asm)
+00401010*      QuadSet
+Module: collidetest.obj(c:\code\engines\lib\immerse\demo\collidetest.cpp)
+00405470       near IMR_3DPoint::IMR_3DPoint()
+00405550+      near IMR_Attitude::IMR_Attitude()
+004055a0+      void near IMR_Attitude::Fix_Ang()
+004055e0       near IMR_Model::IMR_Model()
+00405640       near IMR_Model::~IMR_Model()
+00405670       near IMR_Light::IMR_Light()
+00405b50       near IMR_Object::IMR_Object()
+00406530       near IMR_Object::~IMR_Object()
+00406560       near IMR_Figure::IMR_Figure()
+004065d0       near IMR_Figure::~IMR_Figure()
+00406600       near IMR_Camera::IMR_Camera()
+00406750       near IMR_Camera::~IMR_Camera()
+00406780+      near IMR_CameraOp::IMR_CameraOp()
+004069e0+      near IMR_CameraOp::~IMR_CameraOp()
+00406a10+      near IMR_DirectXInterface::IMR_DirectXInterface()
+00406a80+      near IMR_DirectXInterface::~IMR_DirectXInterface()
+00406ab0       near IMR_Texture::IMR_Texture()
+00406b30       near IMR_Texture::~IMR_Texture()
+00406be0+      int near IMR_Texture::Reset()
+00406c80+      near <IMR_Texture near >::IMR_NamedList::~IMR_NamedList()
+00406cc0+      near <IMR_Lightmap near >::IMR_IDList::~IMR_IDList()
+00406d00+      near IMR_Renderer::IMR_Renderer()
+00406ea0+      near IMR_Renderer::~IMR_Renderer()
+00406f70+      near IMR_Pipeline::IMR_Pipeline()
+00407020+      near IMR_GM_Interface::IMR_GM_Interface()
+00408400+      near IMR_GM_Interface::~IMR_GM_Interface()
+00408820       near <IMR_Model near >::IMR_NamedList::IMR_NamedList()
+00408860       near <IMR_Model near >::IMR_NamedList::IMR_NamedList( int )
+004088b0       void near <IMR_Model near >::IMR_NamedList::Init( int )
+00408910       IMR_Model near * near <IMR_Model near >::IMR_NamedList::Add_Item( char near * )
+00408990       void near <IMR_Model near >::IMR_NamedList::Delete_Item( char near * )
+004089f0       IMR_Model near * near <IMR_Model near >::IMR_NamedList::Get_Item( char near *, int near * )
+00408aa0       near <IMR_Object near >::IMR_NamedList::IMR_NamedList()
+00408ae0       near <IMR_Object near >::IMR_NamedList::IMR_NamedList( int )
+00408b30       void near <IMR_Object near >::IMR_NamedList::Init( int )
+00408b90       IMR_Object near * near <IMR_Object near >::IMR_NamedList::Add_Item( char near * )
+00408c10       void near <IMR_Object near >::IMR_NamedList::Delete_Item( char near * )
+00408c80       IMR_Object near * near <IMR_Object near >::IMR_NamedList::Get_Item( char near *, int near * )
+00408d40       near <IMR_Texture near >::IMR_NamedList::IMR_NamedList()
+00408d80       near <IMR_Texture near >::IMR_NamedList::IMR_NamedList( int )
+00408dd0       void near <IMR_Texture near >::IMR_NamedList::Init( int )
+00408e30       IMR_Texture near * near <IMR_Texture near >::IMR_NamedList::Add_Item( char near * )
+00408eb0       void near <IMR_Texture near >::IMR_NamedList::Delete_Item( char near * )
+00408f10       IMR_Texture near * near <IMR_Texture near >::IMR_NamedList::Get_Item( char near *, int near * )
+00408fc0       near <IMR_Camera near >::IMR_NamedList::IMR_NamedList()
+00409000       near <IMR_Camera near >::IMR_NamedList::IMR_NamedList( int )
+00409050       void near <IMR_Camera near >::IMR_NamedList::Init( int )
+004090b0       IMR_Camera near * near <IMR_Camera near >::IMR_NamedList::Add_Item( char near * )
+00409130       void near <IMR_Camera near >::IMR_NamedList::Delete_Item( char near * )
+00409190       IMR_Camera near * near <IMR_Camera near >::IMR_NamedList::Get_Item( char near *, int near * )
+00409240       near <IMR_Figure near >::IMR_NamedList::IMR_NamedList()
+00409280       near <IMR_Figure near >::IMR_NamedList::IMR_NamedList( int )
+004092d0       void near <IMR_Figure near >::IMR_NamedList::Init( int )
+00409330       IMR_Figure near * near <IMR_Figure near >::IMR_NamedList::Add_Item( char near * )
+004093b0       void near <IMR_Figure near >::IMR_NamedList::Delete_Item( char near * )
+00409410       IMR_Figure near * near <IMR_Figure near >::IMR_NamedList::Get_Item( char near *, int near * )
+004094c0       near <IMR_Lightmap near >::IMR_IDList::IMR_IDList()
+00409500       near <IMR_Lightmap near >::IMR_IDList::IMR_IDList( int )
+00409550       void near <IMR_Lightmap near >::IMR_IDList::Init( int )
+004095b0       IMR_Lightmap near * near <IMR_Lightmap near >::IMR_IDList::Add_Item( int )
+00409640       void near <IMR_Lightmap near >::IMR_IDList::Delete_Item( int )
+004096a0       IMR_Lightmap near * near <IMR_Lightmap near >::IMR_IDList::Get_Item( int, int near * )
+00409750       near <IMR_Light near >::IMR_IDList::IMR_IDList()
+00409790       near <IMR_Light near >::IMR_IDList::IMR_IDList( int )
+004097e0       void near <IMR_Light near >::IMR_IDList::Init( int )
+00409840       IMR_Light near * near <IMR_Light near >::IMR_IDList::Add_Item( int )
+004098d0       void near <IMR_Light near >::IMR_IDList::Delete_Item( int )
+00409940       IMR_Light near * near <IMR_Light near >::IMR_IDList::Get_Item( int, int near * )
+004099f0       near IMR_Lightmap::IMR_Lightmap()
+00409a80       near IMR_Lightmap::~IMR_Lightmap()
+00401d94+      void near Cleanup()
+00401dc8+      void near Quit( char near * )
+00401e28+      void near InitWindowApp()
+00401f04       _WinMain@16
+00405360+      long near WndProc( void near *, int unsigned, int unsigned, long )
+00436014+      int near Running
+00436018+      int near Active
+0043b010+      void near * near ThisInstance
+0043b014+      void near * near GameWindow
+0043b018+      BigFont near MainFont
+0043b43c+      WinKeyboardSys near KB
+0043b440+      IMR_GM_Interface near Immerse
+Module: C:\code\WATCOM\lib386\nt\plib3r.lib(stablcl)
+00409b3a       __wcpp_4_lcl_register__
+Module: C:\code\WATCOM\lib386\math387r.lib(fchop)
+00409b40       __CHP
+Module: C:\code\WATCOM\lib386\nt\plib3r.lib(dtorarst)
+00409b5d       __wcpp_4_dtor_array_store__
+Module: C:\code\WATCOM\lib386\nt\plib3r.lib(opdelarr)
+00409b7e       void near operator delete []( void near * )
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(exit)
+00409b83+      __null_int23_exit_
+00409b84       exit_
+00409bb0+      _exit_
+004360d4+      ___int23_exit
+004360d8+      ___FPE_handler_exit
+Module: ..\..\gfxlib\lib\gfxlib.lib(c:\code\engines\lib\gfxlib\font_lib.cpp)
+00409bd5+      int near BigFont::Print_Char( char )
+00409d57+      int near BigFont::Read_Data( int )
+00409f83*      void near BigFont::Set_Buffer( char near *, int, int )
+00409fce       void near BigFont::Set_16BitBuffer( char near *, int, int, int )
+0040a024*      void near BigFont::Print( char near *, ... )
+0040a115       void near BigFont::Print( int, int, char near *, ... )
+0040a218*      void near BigFont::Get_Pos( int near *, int near * )
+0040a254*      void near BigFont::Set_Pos( int, int )
+0040a28c       int near BigFont::Load_RDF( char near * )
+Module: ..\..\winlayer\lib\winlayer.lib(c:\code\engines\lib\winlayer\winkey.cpp)
+0040a2f3       int near WinKeyboardSys::Get_State( int )
+0040a354*      int near WinKeyboardSys::Get_Hit( int )
+0040a3b5*      int near WinKeyboardSys::Get_NextHit()
+0040a3e3*      char near WinKeyboardSys::Get_NextChar()
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(memset)
+0040a40e       memset_
+Module: C:\code\WATCOM\lib386\nt\plib3r.lib(opnewarr)
+0040a426       void near * near operator new []( int unsigned )
+Module: C:\code\WATCOM\lib386\nt\plib3r.lib(ctorarst)
+0040a42b*      __wcpp_4_ctor_array_storage_1m__
+0040a42b       __wcpp_4_ctor_array_storage_gm__
+0040a44a*      __wcpp_4_ctor_array_storage_1s__
+0040a44a*      __wcpp_4_ctor_array_storage_2s__
+0040a44a       __wcpp_4_ctor_array_storage_gs__
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(memmove)
+0040a456       memmove_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(stricmp)
+0040a4a3       stricmp_
+Module: C:\code\WATCOM\lib386\nt\plib3r.lib(undefed)
+0040a4de       __wcpp_4_undefed_cdtor__
+Module: C:\code\WATCOM\lib386\nt\plib3r.lib(undefmbd)
+0043bc2c       ____wcpp_4_data_undefined_member_data_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(cstrtwwt)
+0040a4f0       _wstart_
+0040a4f0*      _wstart2_
+0040a4f0*      WinMainCRTStartup
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(fltused)
+004360dc       _fltused_
+Module: C:\code\WATCOM\lib386\nt\plib3r.lib(iofefg)
+0043a71c       __ppfltused_
+Module: C:\code\WATCOM\lib386\nt\emu387.lib(386inite)
+0040a58f*      __fini_387_emulator
+0040a58e       __init_387_emulator
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(01h)
+004360e0       __8087
+004360e1*      __real87
+Module: C:\code\WATCOM\lib386\nt\plib3r.lib(moddtorr)
+0043a770       ___wcpp_4_data_module_dtor_ref_
+Module: C:\code\WATCOM\lib386\nt\plib3r.lib(fsroot)
+0043a72e       ___wcpp_4_data_init_fs_root_
+Module: C:\code\WATCOM\lib386\nt\plib3r.lib(stabmod)
+0040a598*      __wcpp_4_module_dtor__
+0040a5bf*      __wcpp_4_mod_register__
+Module: C:\code\WATCOM\lib386\nt\plib3r.lib(stabact)
+0040a5cf*      __wcpp_4_ctor_array__
+Module: C:\code\WATCOM\lib386\nt\plib3r.lib(opnew)
+0040a605*      void near * near operator new( int unsigned )
+Module: C:\code\WATCOM\lib386\nt\plib3r.lib(opdel)
+0040a647*      void near operator delete( void near * )
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(read)
+0040a650*      read_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(filelen)
+0040a806*      filelength_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(lseekwnt)
+0040a87c*      lseek_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(close)
+0040a8f0*      close_
+Module: C:\code\WATCOM\lib386\nt\plib3r.lib(stabadt)
+0040a936+      void near * near dtor_the_array( _RTARCTOR near * )
+0040a96a*      __wcpp_4_dtor_array__
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(openwnt)
+0040a989*      open_
+0040a9ad+      sopen_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(vsprintf)
+0040abf0*      vsprintf_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(write)
+0040acc8*      write_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mainwnt)
+004360e4*      ___TlsIndex
+004360e8+      ___GetThreadPtr
+004360ec*      __AccessFileH
+004360f0*      __ReleaseFileH
+004360f4*      __InitAccessH
+004360f8*      __FiniAccessH
+004360fc*      __AccessIOB
+00436100*      __ReleaseIOB
+00436104*      __AccessNHeap
+00436108*      __AccessFHeap
+0043610c*      __ReleaseNHeap
+0040afac*      __threadid_
+0040afbd+      __sig_null_rtn_
+0040afc8+      __NTInit_
+0040b1f3*      __NTMainInit_
+0040b245*      __exit_
+00436110*      __ReleaseFHeap
+00436114*      __AccessTDList
+00436118*      __ReleaseTDList
+0043611c*      __AccessFList
+00436120*      __ReleaseFList
+00436124+      __ThreadExitRtn
+00436128+      ___sig_init_rtn
+0043612c*      ___sig_fini_rtn
+00436130+      ___process_fini
+0043bc30*      ___Is_DLL
+0043bc34+      ___FirstThreadData
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(initrtns)
+0040b293*      __InitRtns
+0040b2df*      __FiniRtns
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(winrtns)
+00436134*      __WindowsIsWindowedHandle
+00436138*      __WindowsRemoveWindowedHandle
+0043613c*      __WindowsNewWindow
+00436140*      __WindowsCloseWindow
+00436144*      __WindowsSetAbout
+00436148*      __WindowsSetAppTitle
+0043614c*      __WindowsSetConTitle
+00436150*      __WindowsDestroyOnClose
+00436154*      __WindowsYieldControl
+00436158*      __WindowsShutDown
+0043615c*      __WindowsStdin
+00436160*      __WindowsStdout
+00436164*      __WindowsKbhit
+00436168*      __WindowsGetch
+0043616c*      __WindowsGetche
+00436170*      __WindowsPutch
+00436174*      __WindowExitRtn
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(fopen)
+0040b330+      __open_flags_
+0040b531+      _fsopen_
+0040b575*      fopen_
+0040b5f9*      freopen_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(fgets)
+0040b670*      fgets_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(sscanf)
+0040b712+      vsscanf_
+0040b739*      sscanf_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(fclose)
+0040b75a*      fclose_
+0040b799+      __shutdown_stream_
+0040b7ba+      __MkTmpFile_
+0040b864*      __doclose_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(stk)
+0040b923*      __CHK
+0040b933*      __STK
+0040b952*      __STKOVERFLOW_
+0040b962*      __GRO
+0040b982*      __alloca_probe
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(toupper)
+0040b996*      toupper_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(_strcmp)
+0040b9b0*      strcmp_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(nmalloc)
+0040ba51*      _nmalloc_
+0040ba51*      malloc_
+0043618c+      ___nheapbeg
+00436190+      ___MiniHeapRover
+00436194+      ___LargestSizeB4MiniHeapRover
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(strlen)
+0040bb3e*      strlen_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(clock)
+0040bb74*      clock_
+Module: C:\code\WATCOM\lib386\math387r.lib(acos387)
+0040bc1d*      acos_
+0040bbe0*      IF@DACOS
+0040bbe0*      IF@ACOS
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(__stos)
+0040bc30*      __STOSB
+0040bc67*      __STOSD
+Module: C:\code\WATCOM\lib386\nt\plib3r.lib(stabactv)
+0040bcd3*      __wcpp_4_ctor_varray__
+Module: C:\code\WATCOM\lib386\nt\plib3r.lib(fatalerr)
+0040bd11*      __wcpp_4_fatal_runtime_error__
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(wmainwnt)
+0040bd38*      __WinMain
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(segdefns)
+00401003*      ___begtext
+00436000*      __nullarea
+0043a710*      __Start_XI
+0043a76a*      __End_XI
+0043a76a*      __Start_YI
+0043a782*      __End_YI
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(setefg)
+0040bde2*      __setEFGfmt_
+Module: C:\code\WATCOM\lib386\nt\plib3r.lib(iofnoefg)
+004361a4*      void (near * near __EFG_cnvs2d)( char near *, double near * )
+004361a8*      int (near * near __EFG_cnvd2f)( double near *, float near * )
+004361ac*      void (near * near __EFG_LDcvt)( __6ks9tmlong_double near *, cvt_info near *, char near * )
+004361b0*      char near * (near * near __EFG_fcvt)( double, int, int near *, int near * )
+Module: C:\code\WATCOM\lib386\math387r.lib(cnvs2d)
+0040be0f*      __cnvs2d_
+Module: C:\code\WATCOM\lib386\math387r.lib(cnvd2f)
+0040be1d*      __cnvd2f_
+Module: C:\code\WATCOM\lib386\math387r.lib(ldcvt)
+0040bf6f+      _LDScale10x_
+0040bfc9*      __LDcvt_
+Module: C:\code\WATCOM\lib386\math387r.lib(_i_fcvt_)
+0040c980*      _fcvt_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(chk8087)
+0040c98e+      __init_8087_
+0040c9bf*      _fpreset_
+0040c9c9*      __chk8087_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(crwdata)
+00436260*      __psp
+0043628b*      __osmajor
+0043628c*      __osminor
+0043628d*      __osbuild
+0043628f*      __osver
+00436293*      __winmajor
+00436297*      __winminor
+0043629b*      __winver
+00436282*      __Extender
+00436283*      __ExtenderSubtype
+00436284*      __X32VM
+00436264*      __x386_stacklow
+00436248*      __LpCmdLine
+0043624c*      __LpPgmName
+00436250*      __LpDllName
+00436254*      __LpwCmdLine
+00436258*      __LpwPgmName
+0043625c*      __LpwDllName
+00436240*      __dynend
+00436244*      __curbrk
+00436264*      __STACKLOW
+00436268*      __STACKTOP
+0043626c*      __ASTACKSIZ
+00436270*      __ASTACKPTR
+00436274*      __cbyte
+00436278*      __cbyte2
+0043627c*      __child
+00436285*      __Envptr
+00436289*      __Envseg
+00436280*      __no87
+0043629f*      __FPE_handler
+0043629f*      ___FPE_handler
+Module: C:\code\WATCOM\lib386\nt\plib3r.lib(cppdata)
+0043bc40*      __wint_thread_data
+0043bc64*      __compiled_under_NT
+Module: C:\code\WATCOM\lib386\nt\plib3r.lib(prwdata)
+004362a4*      __wint_pure_error_flag
+004362a6*      __wint_undef_vfun_flag
+004362a8*      __wint_module_init
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(nfree)
+0040ca0e*      _nfree_
+0040ca0e*      free_
+0043bc68+      ___MiniHeapFreeRover
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(iomode)
+0040cb12*      __IOMode_
+0040cb67*      __SetIOMode_
+004362ac*      ___NFiles
+004362b0+      ___init_mode
+00436300+      __iomode
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(seterrno)
+0040cb88*      __set_errno_
+0040cb96*      __set_EDOM_
+0040cb9d*      __set_ERANGE_
+0040cba4*      __set_EINVAL_
+0040cbb4*      __set_doserrno_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(nthdl)
+00436304*      ___FileHandleIDs
+0040cbc2*      __NTAtMaxFiles_
+0040cc07*      __NTAddFileHandle_
+0040cc80*      __NTAddSpecificFileHandle_
+0040cd25*      __NTRemoveFileHandle_
+0040cd51*      __NTInitFileHandles_
+0040cdb0*      __NTGetFakeHandle_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(dosret)
+0040cdd9*      _dosret0_
+0040cde0*      _dosretax_
+0040cde4+      __set_errno_dos_
+0040ce35*      __set_errno_nt_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(_clsewnt)
+0040ce46*      __close_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(ntfio)
+0040ced3*      __GetNTCreateAttr_
+0040cf00*      __GetNTAccessAttr_
+0040cf2c*      __GetNTShareAttr_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(umaskval)
+00436324*      ___umaskval
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(isattwnt)
+0040cf84*      isatty_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(iob)
+00436328*      ___iob
+00436530*      ___tmpfnext
+00436531*      __fmode
+0043bc6c*      ___OpenStreams
+0043bc70*      ___ClosedStreams
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(prtf)
+0040cfda*      __prtf_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(stackwnt)
+0040dc61*      stackavail_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mthread)
+0040dc71+      __NTGetCriticalSection_
+0040dcc5+      __CloseSemaphore_
+0040dcf3+      __AccessIOB_
+0040dcfd+      __ReleaseIOB_
+0040dd07+      __AccessFileH_
+0040dd14+      __ReleaseFileH_
+0040dd24+      __InitAccessH_
+0040dd29+      __FiniAccessH_
+0040dd45+      __AccessNHeap_
+0040dd4c+      __ReleaseNHeap_
+0040dd56+      __AccessFHeap_
+0040dd5d+      __ReleaseFHeap_
+0040dd67+      __AccessTDList_
+0040dd6e+      __ReleaseTDList_
+0040dd75+      __AccessFList_
+0040dd7a+      __AccessSemaphore_
+0040dddb+      __ReleaseFList_
+0040dde0+      __ReleaseSemaphore_
+0040de07+      __MultipleThread_
+0040de4b*      __AllocInitThreadData_
+0040de85*      __NTThreadInit_
+0040deda*      __NTAddThread_
+0040df29+      __NTRemoveThread_
+0040df88+      __NTThreadFini_
+0040dfaa*      __InitMultipleThread_
+00436538+      ___AccessSema4
+0043653c+      ___ReleaseSema4
+00436540+      ___CloseSema4
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(environ)
+0043c3d8*      ___env_mask
+0043c3dc*      _environ
+0043c3e0*      __wenviron
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(strdup)
+0040e131*      strdup_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(getmodfn)
+0040e176*      __lib_GetModuleFileNameW_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(ustrdup)
+0040e206*      _wcsdup_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(istable)
+00436544*      __IsTable
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(stklmwnt)
+0040e22d*      __init_stack_limits_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(excptwnt)
+0040e4f0+      ___ExceptionFilter
+0040e6b4*      __NewExceptionHandler_
+0040e700*      __DoneExceptionHandler_
+00436648+      ___oscode_check_func
+0043664c+      ___raise_func
+0043c3e4*      _sw
+0043c3e8+      ___ExceptionHandled
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(comtflag)
+0040e724*      __set_commode_
+00436664*      __commode
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(tolower)
+0040e72f*      tolower_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(allocfp)
+0040e73d*      __allocfp_
+0040e7f8*      __freefp_
+0040e831*      __purgefp_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(fseek)
+0040e8a4*      fseek_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(chktty)
+0040e9b4*      __chktty_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(fgetc)
+0040e9e5*      fgetc_
+0040eaaa+      __filbuf_
+0040ead9+      __fill_buffer_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(scnf)
+0040eb9c*      __scnf_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(gtpidwnt)
+0040fa32*      getpid_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(tmpfl)
+0040fa3e*      tmpfile_
+0040fb33*      __GetTmpPath_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(flush)
+0040fbfb*      __flush_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(ftell)
+0040fd0a*      ftell_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(remove)
+0040fd63*      remove_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(xmsgwnt)
+0040fd68*      __exit_with_msg_
+0040fda1*      __fatal_runtime_error_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mem)
+0040fdc0*      __MemAllocator
+0040fe70*      __MemFree
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(grownear)
+004100a6*      __ExpandDGROUP_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(nmemneed)
+00410101*      __nmemneed_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(heapmod)
+0043c3f0*      ___nheap_clean
+0043c3f1*      ___fheap_clean
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(gtctmwnt)
+00410104*      __getctime_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mktime)
+0041016b*      mktime_
+Module: C:\code\WATCOM\lib386\math387r.lib(atan387)
+00410324*      atan_
+00410330*      atan2_
+004102fa*      IF@ATAN
+004102fa*      IF@DATAN
+0041030f*      IF@ATAN2
+0041030f*      IF@DATAN2
+Module: C:\code\WATCOM\lib386\math387r.lib(sqrt387)
+00410340*      sqrt_
+00410370*      IF@SQRT
+00410370*      IF@DSQRT
+00410372*      __@DSQRT
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(enterdb)
+004103a7*      __EnterWVIDEO_
+00436788+      ___WD_Present
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(regdata)
+004103cd*      __RegisterThreadDataSize_
+0043678c*      ___ThreadDataSize
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(cinit)
+004103f5*      __CommonInit_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(dosseg)
+00001234*      __DOSseg__
+Module: C:\code\WATCOM\lib386\math387r.lib(efgfmt)
+004103f6*      _EFG_Format_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(noefgfmt)
+00436790*      ___EFG_printf
+00436794*      ___EFG_scanf
+Module: C:\code\WATCOM\lib386\math387r.lib(strtod)
+0041051c+      __Strtold_
+004106b0*      strtod_
+Module: C:\code\WATCOM\lib386\math387r.lib(ldclass)
+0041072f*      __LDClass_
+Module: C:\code\WATCOM\lib386\math387r.lib(efcvt)
+004107b7*      ecvt_
+004107f0*      fcvt_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(save8087)
+00436798*      ___Save8087
+0043679c*      ___Rest8087
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(8087cw)
+004367a0*      __8087cw
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(init8087)
+00410824*      __init_80x87
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(nrealloc)
+0041084b*      _nrealloc_
+0041084b*      realloc_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(initfile)
+004108c5*      __InitFiles_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(ioexit)
+00410957*      __full_io_exit_
+00410963*      fcloseall_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(wctomb)
+004109c0*      wctomb_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(itoa)
+004109f5+      utoa_
+00410a3e*      itoa_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(lltoa)
+00410a59*      __clib_ulltoa_
+00410af0*      __clib_lltoa_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(ltoa)
+00410b46*      ultoa_
+00410b8f*      ltoa_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mbisdbcs)
+0043c3f4*      ___IsDBCS
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mbislead)
+00410baa*      _ismbblead_
+0043c3f8*      ___MBCSIsTable
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(calloc)
+00410bbf*      calloc_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(trdlist)
+00410bd7*      __GetThreadData_
+00410c10*      __ReallocThreadData_
+00410ce4*      __AddThreadData_
+00410d45*      __RemoveThreadData_
+00410d8f*      __ResizeThreadDataList_
+00410db2*      __FreeThreadDataList_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mthrdini)
+00410ddb*      __InitThreadData_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(trdalloc)
+00410e03*      __FiniThreadProcessing_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(setenvp)
+00410e0d*      __setenvp_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(ustrlen)
+00410eca*      wcslen_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(memcpy)
+00410edd*      memcpy_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(conutwnt)
+00410f02*      __NTRealKey_
+00410f94*      __NTConsoleInput_
+00410f9f*      __NTConsoleOutput_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(fclex387)
+00410faa*      _ClearFPE_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(signlwnt)
+00436824+      _SignalTable
+00410fad+      __SetSignalFunc_
+00410fe9+      __GetSignalFunc_
+0041100b+      __GetSignalOSCode_
+0041102d+      __CheckSignalExCode_
+00411145+      __sigabort_
+0041114a+      raise_
+00411177*      __sigfpe_handler_
+004111bb*      signal_
+0041128d+      __SigInit_
+004112d3+      __SigFini_
+00411302+      __sig_init_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(tellwnt)
+0041131d*      tell_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(ioalloc)
+00411378*      __ioalloc_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(flushall)
+004113ff*      flushall_
+00411404*      __flushall_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(gtchewnt)
+0041143f*      getche_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(qread)
+00411461*      __qread_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mbtowc)
+004114f3*      mbtowc_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(fdfs)
+00411588*      __FDFS
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(i8m)
+004115d4*      __I8M
+004115d4*      __U8M
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(accsswnt)
+004115f0*      access_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(errno)
+00411624*      __get_errno_ptr_
+0041162e*      __get_doserrno_ptr_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(renamwnt)
+00411638*      rename_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(getenv)
+00411651*      getenv_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(fullpath)
+004116ab*      _fullpath_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(gtcwdwnt)
+0041173c*      getcwd_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(qwrit)
+004117bd*      __qwrite_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(fsync)
+00411887*      fsync_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(fflush)
+004118e4*      fflush_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(unlnkwnt)
+004118f4*      unlink_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(heapen)
+0041190f*      _heapenable_
+00436890*      ___heap_enabled
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(nheapmin)
+00411930*      _nheapshrink_
+00411930*      _nheapmin_
+00411930*      _heapmin_
+00411930*      _heapshrink_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(amblksiz)
+00436894*      __amblksiz
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(timeutil)
+004119f7*      __leapyear_
+00411b51*      __isindst_
+0043a378*      ___diyr
+0043a392*      ___dilyr
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(gmtime)
+00411e30*      __brktime_
+00411f45+      _gmtime_
+00411f63*      gmtime_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(tzset)
+00436898*      ___start_dst
+004368bc*      ___end_dst
+004369e2*      _tzname
+004369ea*      _timezone
+004369ee+      _daylight
+004369f2*      ___dst_adjust
+00411f7a*      __DontCacheOSTZ_
+00411f94*      __CacheOSTZ_
+004120af*      tzset_
+004120c1*      __parse_tz_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(chipvar)
+004369fc*      ___chipbug
+004369fc*      __chipbug
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(chipw32)
+004123ec*      __fpatan_wrap
+Module: C:\code\WATCOM\lib386\math387r.lib(math87e)
+00412420*      __math87_err_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(bufld386)
+0041249c*      __ZBuf2LD
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(hugeval)
+0043a3ac*      __HugeValue
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(cvtbuf)
+0041253f*      __CVTBuffer_
+Module: C:\code\WATCOM\lib386\math387r.lib(cvt)
+0041254b*      __cvt_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(nmsize)
+004125d0*      _nmsize_
+004125d0*      _msize_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(nexpand)
+004125db*      _nexpand_
+004125db*      _expand_
+00412615+      __HeapManager_expand_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mbinit)
+004127bf*      __mbinit_
+00436a00*      ___MBCodePage
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(i8d)
+0041290c*      __I8D
+00412961*      __U8D
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(register)
+004129f2*      _beginthread_
+004129f9*      _endthread_
+00412a00*      __initthread_
+00412a07*      __RegisterThreadData_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(dofilstr)
+00412a46*      __ParsePosixHandleStr_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(abort)
+00412b66*      abort_
+00412b6c*      __terminate_
+00436a10*      ___abort
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(cntrl87)
+00412b7e*      _control87_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(getchwnt)
+00412cd7*      getch_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(putchwnt)
+00412d53*      putch_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mbclen)
+00412db7*      _mbclen_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mbsnicmp)
+00412de2*      _mbsnicmp_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(wcstombs)
+00412e54*      wcstombs_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(chipbug)
+00412f0a*      __verify_pentium_fdiv_bug_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(chipa32)
+00412f90*      __fpatan_chk
+Module: C:\code\WATCOM\lib386\math387r.lib(math2err)
+00413190*      __math1err_
+0041319a+      __math2err_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(thredwnt)
+0041331c*      __CBeginThread_
+004133f5*      __CEndThread_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(strncpy)
+00413421*      strncpy_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(strtol)
+00413585*      strtoul_
+0041358f*      strtol_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(putenv)
+004135e8*      putenv_
+00413740+      __putenv_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mbterm)
+0041398b*      _mbterm_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mbcicmp)
+004139c7*      _mbcicmp_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mbsinc)
+00413a1e*      _mbsinc_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(div386)
+00413a4c*      __FDD
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(fd386mth)
+00413c58*      __FDA
+00413c52*      __FDS
+00413e0f*      __FDM
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(fdc)
+00413fac*      __FDC
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(chipd32)
+004140fb*      __fdiv_fpr
+004145bd*      __fdiv_chk
+004145d0*      __fdiv_m32
+0041461c*      __fdiv_m64
+00414668*      __fdiv_m32r
+004146b4*      __fdiv_m64r
+Module: C:\code\WATCOM\lib386\math387r.lib(_matherr)
+00414700*      _set_matherr_
+00414706+      __rterrmsg_
+0041474e*      _matherr_
+00436b1c+      __RWD_matherr
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mbschr)
+0041477d*      _mbschr_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mbslen)
+004147d9*      _mbslen_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mbstowcs)
+004147fb*      mbstowcs_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(uputenv)
+0041486e*      _wputenv_
+00414999*      __wputenv_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mbccpy)
+00414bce*      _mbccpy_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mbsupr)
+00414bff*      _mbsupr_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mbccmp)
+00414c4e*      _mbccmp_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(fstatus)
+00414ca6*      F8UnderFlow
+00414ca8*      F4UnderFlow
+00414cab*      F8InvalidOp
+00414cb7*      F8DivZero
+00414ce3*      F4DivZero
+00414cc3*      F8OverFlow
+00414cef*      F4OverFlow
+00414cc3*      F8RetInf_
+00414cc3*      _F8RetInf_
+Module: C:\code\WATCOM\lib386\math387r.lib(__mtherr)
+00414d0c*      __matherr
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(iobaddr)
+00414d11*      __get_std_stream_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(fputs)
+00414d30*      fputs_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(fputc)
+00414dc6*      fputc_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mbconv)
+00414ea4*      _mbvtop_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(ustrchr)
+00414ebe*      wcschr_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(setenvar)
+00414ed4*      __lib_SetEnvironmentVariableW_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(crtwenv)
+00414f9a*      __create_wide_environment_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(utoupper)
+00414fea*      towupper_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mbsnextc)
+00414ffa*      _mbsnextc_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mbcupper)
+00415035*      _mbctoupper_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(fpexcept)
+0041509e*      __FPE_exception_
+Module: C:\code\WATCOM\lib386\math387r.lib(matherr)
+004150a5*      matherr_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mbdtoupp)
+004150a8*      _mbdtoupper_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(ismbdlow)
+004150bb*      _ismbdlower_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mbislegl)
+004150fe*      _ismbclegal_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(mbistrai)
+0041513d*      _ismbbtrail_
+Module: C:\code\WATCOM\lib386\nt\clib3r.lib(isktable)
+00436b20*      __IsKTable
+Module: imr.lib(c:\code\engines\lib\immerse\code\core\imr_geom_object.cpp)
+00415180       void near IMR_Object::UpdateCoords()
+00415778       void near IMR_Object::Reset()
+00415930       void near IMR_Object::Set_Name( char near * )
+004159a4*      int near IMR_Object::Setup( <IMR_Model near >::IMR_NamedList near *, <IMR_Model near >::IMR_NamedList near * )
+00415a18       void near IMR_Object::Attach_Light( IMR_Light near * )
+00415a64*      void near IMR_Object::Detach_Light( int )
+00415ad4+      IMR_Light near * near IMR_Object::Get_Light( int, int near * )
+00415b7c+      int near IMR_Object::MergeToModel( IMR_Model near *, IMR_3DPoint )
+00415d00*      int near IMR_Object::Attach_Child( IMR_Object near * )
+00415dcc*      IMR_Object near * near IMR_Object::Detach_Child( char near * )
+00415e60+      IMR_Object near * near IMR_Object::Get_Child( char near *, int near * )
+00415f18       void near IMR_Object::Set_ModelName( char near * )
+00415f90*      void near IMR_Object::Animation_Jump( IMR_3DPoint near &, IMR_Attitude near & )
+00416100*      void near IMR_Object::Animation_Init( IMR_3DPoint near &, IMR_Attitude near &, int )
+00416708*      int near IMR_Object::Animation_Step()
+00416be4*      void near IMR_Object::Motion_Travel( IMR_3DPoint near &, float )
+00416c6c       int near IMR_Object::Motion_Travel_CheckCollide( IMR_3DPoint near &, float, IMR_Object near *, IMR_CollideInfo near & )
+00417584       void near IMR_Object::Motion_Turn( IMR_Attitude near &, float )
+00417600+      IMR_3DPoint near IMR_Object::CheckCollide( IMR_CollideInfo near &, IMR_3DPoint, IMR_3DPoint )
+Module: imr.lib(c:\code\engines\lib\immerse\code\geommngr\imr_gm_cameraop.cpp)
+00418c70       void near IMR_CameraOp::Reset()
+00418d90       int near IMR_CameraOp::Vcn_SetParam( int, int )
+00418e40       int near IMR_CameraOp::Vcn_UpdateCam( IMR_Object near * )
+Module: imr.lib(c:\code\engines\lib\immerse\code\core\imr_geom_model.cpp)
+0041bda0       near IMR_UVIInfo::IMR_UVIInfo()
+0041be10       near IMR_PrjPoint::IMR_PrjPoint()
+0041bea0       near IMR_Polygon::IMR_Polygon()
+0041c110       near IMR_Polygon::~IMR_Polygon()
+00419270+      int near IMR_Model::Init( int, int )
+00419344       void near IMR_Model::Reset()
+004193d0       void near IMR_Model::Set_Name( char near * )
+00419444+      int near IMR_Model::Setup()
+004195b8*      int near IMR_Model::Shift_Pos( float, float, float )
+0041963c       int near IMR_Model::Make_Cube( float, char near * )
+00419a80*      int near IMR_Model::Make_Rectangle( float, float, float, char near * )
+00419ee8       int near IMR_Model::Make_Pyramid( float, float, float, char near * )
+0041a234       int near IMR_Model::Make_Wall( float, float, float, char near * )
+0041a518*      int near IMR_Model::Make_Cylinder( float, float, char near * )
+0041a9b4*      int near IMR_Model::CombineModel( IMR_Model near *, IMR_3DPoint, IMR_Attitude )
+0041b8e8       int near IMR_Model::Paint( char near * )
+0041ba18*      int near IMR_Model::Paint_Unpegged( char near *, float, float )
+0041bd30*      int near IMR_Model::Set_PolyFlag_LightSource( int )
+Module: imr.lib(c:\code\engines\lib\immerse\code\geommngr\imr_gm_figure.cpp)
+0041c180+      void near IMR_SkelSegment::Set_Name( char near * )
+0041c1f4*      void near IMR_SkelSegment::Set_ObjectName( char near * )
+0041c26c+      void near IMR_Skeleton::Set_Name( char near * )
+0041c2e0+      int near IMR_Skeleton::Setup( <IMR_Object near >::IMR_NamedList near *, <IMR_Object near >::IMR_NamedList near * )
+0041c390*      int near IMR_Skeleton::Add_Segment( char near * )
+0041c570*      IMR_SkelSegment near * near IMR_Skeleton::Get_Segment( char near * )
+0041c5fc*      void near IMR_Skeleton::Delete_Segment( char near * )
+0041c6e8+      void near IMR_Skeleton::Wipe_Segments()
+0041c74c       void near IMR_Figure::Set_Name( char near * )
+0041c7c0*      int near IMR_Figure::Setup( <IMR_Object near >::IMR_NamedList near *, <IMR_Object near >::IMR_NamedList near * )
+0041c8a4*      int near IMR_Figure::Add_Key( char near * )
+0041c97c+      IMR_Skeleton near * near IMR_Figure::Get_Key( char near * )
+0041ca08*      void near IMR_Figure::Delete_Key( char near * )
+0041cb24       void near IMR_Figure::Wipe_Keys()
+0041cbb4*      void near IMR_Figure::Animation_Jump( char near * )
+0041cc68*      void near IMR_Figure::Animation_Init( char near *, int )
+0041cd4c*      int near IMR_Figure::Animation_Step()
+Module: imr.lib(c:\code\engines\lib\immerse\code\rendcore\directx6\imr_renderer.cpp)
+0041ce30+      long near IMR_DirectXInterface::DeviceCallback( _GUID near *, char near *, char near *, _D3DDeviceDesc near *, _D3DDeviceDesc near *, void near * )
+0041d008+      long near IMR_DirectXInterface::ZBufferCallback( _DDPIXELFORMAT near *, void near * )
+0041d064+      long near IMR_DirectXInterface::TextureFormatCallback( _DDPIXELFORMAT near *, void near * )
+0041d130+      int near IMR_DirectXInterface::Init( __ak83i1IMR_DirectXInterface_InitData near & )
+0041d400       void near IMR_DirectXInterface::Shutdown()
+0041d530+      void near IMR_DirectXInterface::Restore( IDirectDrawSurface4 near * )
+0041d5a4*      IDirectDrawSurface4 near * near IMR_DirectXInterface::Create_Surface( int, int, int )
+0041d674*      IDirectDrawSurface4 near * near IMR_DirectXInterface::Create_8BitTexture( int, int, void near * )
+0041d780+      IDirectDrawSurface4 near * near IMR_DirectXInterface::Create_16BitTexture( int, int )
+0041d894*      IDirectDrawSurface4 near * near IMR_DirectXInterface::Create_24BitTexture( int, int )
+0041d9b8+      IDirectDrawSurface4 near * near IMR_DirectXInterface::Create_3DSurface( int, int, int )
+0041da88+      IDirectDrawSurface4 near * near IMR_DirectXInterface::Create_Lightmap( int, int )
+0041dba0+      void near * near IMR_DirectXInterface::Lock_Surface( IDirectDrawSurface4 near * )
+0041dc30+      void near IMR_DirectXInterface::Unlock_Surface( IDirectDrawSurface4 near * )
+0041dc6c+      int near IMR_DirectXInterface::Set_Surface_Palette( IDirectDrawSurface4 near *, void near * )
+0041ddec*      void near IMR_DirectXInterface::Clear_Surface( IDirectDrawSurface4 near * )
+0041dea4+      int near IMR_DirectXInterface::FlipBackBuffer()
+0041df20*      int near IMR_DirectXInterface::BlitToPrimary( IDirectDrawSurface4 near * )
+0041df54+      int near IMR_DirectXInterface::BlitToBack( IDirectDrawSurface4 near * )
+0041df88+      int near IMR_DirectXInterface::Blit( IDirectDrawSurface4 near *, IDirectDrawSurface4 near * )
+0041e0d4+      int near IMR_DirectXInterface::InitDirect3D( IDirectDrawSurface4 near * )
+00425290+      near IMR_TexRef::IMR_TexRef()
+004252e0+      near IMR_TexRef::~IMR_TexRef()
+0041e714+      void near IMR_DirectXInterface::Prepare_Frame( IDirectDrawSurface4 near * )
+0041e7a4       int near IMR_DirectXInterface::Get_PrimarySurfacePitch()
+0041e86c+      char near * near IMR_MsgFromDXErr( int )
+0041ec18*      int near IMR_Renderer::Init( int, int )
+0041ec68       int near IMR_Renderer::Shutdown()
+0041ecfc*      int near IMR_Renderer::Begin_Raster_Batch( IMR_Camera near & )
+0041f06c*      int near IMR_Renderer::Draw_Textured_Polygon( IMR_Polygon near & )
+0041ff18*      int near IMR_Renderer::Draw_TexturedLit_Polygon( IMR_Polygon near & )
+00421028*      int near IMR_Renderer::Draw_PolyBatch( IMR_Polygon near * near *, int )
+00421f8c*      int near IMR_Renderer::End_Raster_Batch()
+0042202c+      IMR_TexRef near IMR_Renderer::Texture_Add( char near * )
+0042226c+      int near IMR_Renderer::Texture_Gen( IMR_TexRef )
+0042239c+      IMR_TexRef near IMR_Renderer::Texture_GetRef( char near * )
+00422870+      IMR_TexRef near IMR_Renderer::Texture_GetData( char near * )
+00422bf0+      int near IMR_Renderer::Texture_ReturnData( IMR_TexRef )
+00422c2c*      IMR_TexRef near IMR_Renderer::Lightmap_Add( int )
+00422e6c*      int near IMR_Renderer::Lightmap_Gen( IMR_TexRef )
+00422f94*      IMR_TexRef near IMR_Renderer::Lightmap_GetRef( int )
+00423284*      IMR_TexRef near IMR_Renderer::Lightmap_GetData( int )
+00423604*      int near IMR_Renderer::Lightmap_ReturnData( IMR_TexRef )
+00423640*      int near IMR_Renderer::Set_Screen( int, int, void near * )
+004236cc*      int near IMR_Renderer::Set_Window( int, int, int, int )
+00423870*      int near IMR_Renderer::Target_Lock()
+004238f4+      void near IMR_Renderer::Target_Unlock()
+00423940       int near IMR_Renderer::Target_LockBack()
+004239d0       void near IMR_Renderer::Target_UnlockBack()
+00423a28*      int near IMR_Renderer::Target_Blit()
+00423a94*      int near IMR_Renderer::Target_Flip()
+00423af0       int near IMR_Renderer::Texture_LoadFromPCX( char near *, char near * )
+00424388+      int near IMR_Renderer::Texture_Load( char near * )
+00424a94+      int near IMR_Renderer::Texture_CreateDummy( char near * )
+00424ef0       void near IMR_Texture::Set_Name( char near * )
+00424f64+      int near IMR_Texture::Create( IMR_DirectXInterface near &, int, int, void near * )
+004250a4+      int near IMR_Texture::Create_Lightmap( IMR_DirectXInterface near &, int, int )
+00425310+      near IMR_TexRef::IMR_TexRef( IMR_TexRef const near & )
+0043a440+      _CLSID_DirectDraw
+0043a450+      _CLSID_DirectDrawClipper
+0043a460+      _IID_IDirectDraw
+0043a470+      _IID_IDirectDraw2
+0043a480+      _IID_IDirectDraw4
+0043a490+      _IID_IDirectDrawSurface
+0043a4a0+      _IID_IDirectDrawSurface2
+0043a4b0+      _IID_IDirectDrawSurface3
+0043a4c0+      _IID_IDirectDrawSurface4
+0043a4d0+      _IID_IDirectDrawPalette
+0043a4e0+      _IID_IDirectDrawClipper
+0043a4f0+      _IID_IDirectDrawColorControl
+0043a500+      _IID_IDirectDrawGammaControl
+0043a510+      _IID_IDirect3D
+0043a520+      _IID_IDirect3D2
+0043a530+      _IID_IDirect3D3
+0043a540+      _IID_IDirect3DRampDevice
+0043a550+      _IID_IDirect3DRGBDevice
+0043a560+      _IID_IDirect3DHALDevice
+0043a570+      _IID_IDirect3DMMXDevice
+0043a580+      _IID_IDirect3DRefDevice
+0043a590+      _IID_IDirect3DNullDevice
+0043a5a0+      _IID_IDirect3DDevice
+0043a5b0+      _IID_IDirect3DDevice2
+0043a5c0+      _IID_IDirect3DDevice3
+0043a5d0+      _IID_IDirect3DTexture
+0043a5e0+      _IID_IDirect3DTexture2
+0043a5f0+      _IID_IDirect3DLight
+0043a600+      _IID_IDirect3DMaterial
+0043a610+      _IID_IDirect3DMaterial2
+0043a620+      _IID_IDirect3DMaterial3
+0043a630+      _IID_IDirect3DExecuteBuffer
+0043a640+      _IID_IDirect3DViewport
+0043a650+      _IID_IDirect3DViewport2
+0043a660+      _IID_IDirect3DViewport3
+0043a670+      _IID_IDirect3DVertexBuffer
+004251e0+      void near * near IMR_Texture::LockData( IMR_DirectXInterface near & )
+00425254+      void near IMR_Texture::UnlockData( IMR_DirectXInterface near & )
+0043c760+      Vert near D3DVerts[]
+00474760+      int near logged
+Module: imr.lib(c:\code\engines\lib\immerse\code\geommngr\imr_gm_interface.cpp)
+00426170+      int near IMR_Object::Is( char near * )
+004261c0+      IMR_Object near * near IMR_Object::Get_Child( char near * )
+00425420       int near IMR_GM_Interface::Init( IMR_InterfaceInitData near & )
+00425514       int near IMR_GM_Interface::Shutdown()
+0042555c       int near IMR_GM_Interface::Prep_Geometries()
+004259b0       int near IMR_GM_Interface::Attach_Object( char near *, char near * )
+00425ac4*      IMR_Object near * near IMR_GM_Interface::Lop_Object( char near * )
+00425c0c       int near IMR_GM_Interface::Add_Light( int )
+00425ca0       int near IMR_GM_Interface::Add_Model( int, char near * )
+00425d50       IMR_Light near * near IMR_GM_Interface::Get_Light( int )
+00425da0       IMR_Model near * near IMR_GM_Interface::Get_Model( char near * )
+00425e0c       int near IMR_GM_Interface::Add_Object( int, char near * )
+00425ebc       IMR_Object near * near IMR_GM_Interface::Get_Object( char near * )
+00425f3c*      int near IMR_GM_Interface::Add_Figure( int, char near * )
+00425fec*      IMR_Figure near * near IMR_GM_Interface::Get_Figure( char near * )
+00426058       int near IMR_GM_Interface::Begin_Frame( char near * )
+004260d8*      int near IMR_GM_Interface::Begin_Frame( IMR_Camera near * )
+00426130       int near IMR_GM_Interface::Add_Geometries()
+Module: imr.lib(c:\code\engines\lib\immerse\code\core\imr_interface.cpp)
+00426270*      int near IMR_Interface::Init( IMR_InterfaceInitData near & )
+004263b8       int near IMR_Interface::Shutdown()
+00426444*      int near IMR_Interface::Begin_Frame( IMR_Camera near & )
+00426538*      int near IMR_Interface::Add_Object( IMR_Object near & )
+004265d0*      int near IMR_Interface::Add_Model( IMR_Model near &, IMR_3DPoint near &, IMR_Attitude near & )
+00426674       int near IMR_Interface::Draw_Frame()
+00426820       int near IMR_Interface::End_Frame()
+00426914       int near IMR_Interface::Blit_Frame()
+004269f8       int near IMR_Interface::Flip_Buffers()
+00426a64       int near IMR_Interface::Set_Screen( int, int, void near * )
+00426b0c       int near IMR_Interface::Set_Window( int, int, int, int )
+Module: imr.lib(c:\code\engines\lib\immerse\code\callstatus\imr_log.cpp)
+00426bc0       int near IMR_StartLogging( char near * )
+00426c54       int near IMR_EndLogging()
+00426cb0+      void near IMR_LogLine( char near *, ... )
+00426d30*      void near IMR_LogMsg( int, char near *, char near *, ... )
+00426e48*      void near IMR_GetLastLog( int near &, char near *, char near * )
+00474764+      bool near IMR_LogEnabled
+00474768+      char near * near IMR_LogFileName
+0047476c+      int near IMR_LogFile
+00474770+      __4139joIMR_LastLogMsg near IMR_LastLogMsg
+Module: imr.lib(c:\code\engines\lib\immerse\code\core\imr_resource.cpp)
+00426fd0+      near IMR_ResourceManager::IMR_ResourceManager()
+00427020+      near IMR_ResourceManager::~IMR_ResourceManager()
+00426f28       int near IMR_ResourceManager::LoadResources( char near * )
+00474780       IMR_ResourceManager near IMR_Resources
+Module: imr.lib(c:\code\engines\lib\immerse\code\core\imr_rdfmngr.cpp)
+00427070+      int near IMR_RDFManager::AddDirEnt()
+0042717c*      void near IMR_RDFManager::Finalize()
+004271ec*      int near IMR_RDFManager::AddRDF( char near * )
+004273a4*      int near IMR_RDFManager::FindRDF( char near *, char near *, char near * )
+004275b8       char near * near IMR_RDFManager::GetRDFLocation( char near *, char near *, char near * )
+00427624*      int near IMR_RDFManager::OpenRDF( int, int near & )
+Module: imr.lib(c:\code\engines\lib\immerse\code\foundation\imr_time.cpp)
+00427740       void near IMR_Time_Reset()
+00427764       int near IMR_Time_StartTimer()
+004277b0       int near IMR_Time_EndTimer()
+00436cac+      float near IMR_Time_ClockToMs
+00475784+      int near IMR_Time_FrameStartTime
+00475788*      int near IMR_Time_FrameTime
+Module: imr.lib(c:\code\engines\lib\immerse\code\core\imr_collide.cpp)
+0042784c*      int near IMR_Collide_InRange( IMR_3DPoint near &, float, IMR_Polygon near & )
+00427c20*      int near IMR_Collide_CheckModCollision( IMR_Model near *, IMR_3DPoint, IMR_Attitude, IMR_CollideInfo near & )
+0042a77c*      float near IMR_Collide_IntersectRayPlane( IMR_3DPoint, IMR_3DPoint, IMR_3DPoint, IMR_3DPoint )
+0042a87c+      float near IMR_Collide_IntersectRaySphere( IMR_3DPoint, IMR_3DPoint, IMR_3DPoint, float )
+0042aa9c+      bool near IMR_Collide_CheckPointInTriangle( IMR_3DPoint, IMR_3DPoint, IMR_3DPoint, IMR_3DPoint )
+0042b1a4+      IMR_3DPoint near IMR_Collide_ClosestPointOnLine( IMR_3DPoint near &, IMR_3DPoint near &, IMR_3DPoint near & )
+0042b72c+      IMR_3DPoint near IMR_Collide_ClosestPointOnTriangle( IMR_3DPoint, IMR_3DPoint, IMR_3DPoint, IMR_3DPoint )
+0042be5c+      bool near IMR_Collide_CheckPointInSphere( IMR_3DPoint, IMR_3DPoint, float )
+0042bf90*      IMR_3DPoint near IMR_Collide_TangentPlaneNormalOfEllipsoid( IMR_3DPoint, IMR_3DPoint, IMR_3DPoint )
+0042c440       near IMR_3DPoint::~IMR_3DPoint()
+0042c2b4+      int near IMR_Collide_ClassifyPoint( IMR_3DPoint, IMR_3DPoint, IMR_3DPoint )
+0047578c       IMR_3DPoint near DbgInfo[]
+Module: imr.lib(c:\code\engines\lib\immerse\code\core\imr_matrix.cpp)
+0042c470       void near IMR_Matrix::Rotate( int, int, int )
+0042dae8*      void near IMR_Matrix::Translate( float, float, float )
+0042db20*      void near IMR_Matrix::ZYXRotate( int, int, int )
+Module: imr.lib(c:\code\engines\lib\immerse\code\core\imr_geom_prim_point.cpp)
+0042f1a0       void near IMR_3DPoint::Transform( IMR_Matrix near & )
+Module: imr.lib(c:\code\engines\lib\immerse\code\core\imr_camera.cpp)
+0042f280       void near IMR_Camera::Set_Name( char near * )
+Module: imr.lib(c:\code\engines\lib\immerse\code\core\imr_geom_poly.cpp)
+0042f300+      void near IMR_Polygon::Find_Centroid()
+0042f53c*      void near IMR_Polygon::Find_Normal()
+0042f6dc*      void near IMR_Polygon::Find_Radius()
+Module: imr.lib(c:\code\engines\lib\immerse\code\core\imr_table.cpp)
+0042fa30*      void near IMR_BuildTables()
+004758bc+      int near TablesBuilt
+004758c0*      float near SinTable[]
+004768c4*      float near CosTable[]
+Module: imr.lib(c:\code\engines\lib\immerse\code\core\imr_material.cpp)
+0042fab0*      void near IMR_Material::Set_Name( char near * )
+0042fb28*      void near IMR_Material::Set_TextureName( char near * )
+Module: imr.lib(c:\code\engines\lib\immerse\code\core\imr_pipeline.cpp)
+0042fba0*      int near IMR_Pipeline::Init( int, int, int )
+0042fcd8*      void near IMR_Pipeline::Reset()
+0042fd58*      int near IMR_Pipeline::Add_Model( IMR_Model near &, IMR_3DPoint near &, IMR_Attitude near & )
+0042fda8+      int near IMR_Pipeline::Add_Model( IMR_Model near &, IMR_3DPoint near &, IMR_Matrix near & )
+0043037c*      int near IMR_Pipeline::Add_Object( IMR_Object near & )
+00430b18*      int near IMR_Pipeline::SetupFrame( IMR_Camera near &, IMR_Renderer near & )
+00430b74*      int near IMR_Pipeline::Add_Geometries( IMR_Object near & )
+00430ba4*      int near IMR_Pipeline::Illuminate()
+00430c34*      int near IMR_Pipeline::Transform()
+00431130*      int near IMR_Pipeline::Cull()
+00431edc*      int near IMR_Pipeline::ClipAndProject()
+00432e88*      int near IMR_Pipeline::DrawFrame()
+00432ff4*      long unsigned near IMR_Pipeline::Async_DrawFrame( void near * )
+Module: imr.lib(c:\code\engines\lib\immerse\code\core\imr_geom_light.cpp)
+00433140*      void near IMR_Light::Set_Direction( int, int )
+004331d0*      void near IMR_Light::Set_Direction( IMR_3DPoint near & )
+00433464*      void near IMR_Light::IlluminatePolyList( IMR_Polygon near *, int )
+
+
+                        +----------------------+
+                        |   Imported Symbols   |
+                        +----------------------+
+
+Symbol                              Module
+======                              ======
+
+_DirectDrawCreate@12                DDRAW.dll
+_SetStdHandle@8                     KERNEL32.dll
+_GetStdHandle@4                     KERNEL32.dll
+_CreateEventA@16                    KERNEL32.dll
+_GetFileType@4                      KERNEL32.dll
+_DeleteCriticalSection@4            KERNEL32.dll
+_GetCurrentThreadId@0               KERNEL32.dll
+_InitializeCriticalSection@4        KERNEL32.dll
+_EnterCriticalSection@4             KERNEL32.dll
+_LeaveCriticalSection@4             KERNEL32.dll
+_TlsGetValue@4                      KERNEL32.dll
+_SetLastError@4                     KERNEL32.dll
+_TlsAlloc@0                         KERNEL32.dll
+_TlsSetValue@8                      KERNEL32.dll
+_TlsFree@4                          KERNEL32.dll
+_GetModuleFileNameW@12              KERNEL32.dll
+_MultiByteToWideChar@24             KERNEL32.dll
+_VirtualQuery@12                    KERNEL32.dll
+_LoadLibraryA@4                     KERNEL32.dll
+_GetProcAddress@8                   KERNEL32.dll
+_UnhandledExceptionFilter@4         KERNEL32.dll
+_SetUnhandledExceptionFilter@4      KERNEL32.dll
+_GetCurrentProcessId@0              KERNEL32.dll
+_VirtualAlloc@16                    KERNEL32.dll
+_GetLocalTime@4                     KERNEL32.dll
+_WideCharToMultiByte@32             KERNEL32.dll
+_SetConsoleCtrlHandler@8            KERNEL32.dll
+_GetFileAttributesA@4               KERNEL32.dll
+_MoveFileA@8                        KERNEL32.dll
+_GetFullPathNameA@16                KERNEL32.dll
+_GetCurrentDirectoryA@8             KERNEL32.dll
+_FlushFileBuffers@4                 KERNEL32.dll
+_DeleteFileA@4                      KERNEL32.dll
+_VirtualFree@12                     KERNEL32.dll
+_GetTimeZoneInformation@4           KERNEL32.dll
+_GetACP@0                           KERNEL32.dll
+_GetOEMCP@0                         KERNEL32.dll
+_GetCPInfo@8                        KERNEL32.dll
+_ReadConsoleInputA@16               KERNEL32.dll
+_GetConsoleMode@8                   KERNEL32.dll
+_SetConsoleMode@8                   KERNEL32.dll
+_WriteConsoleA@20                   KERNEL32.dll
+_SetEvent@4                         KERNEL32.dll
+_GetCurrentThread@0                 KERNEL32.dll
+_WaitForSingleObject@8              KERNEL32.dll
+_ExitThread@4                       KERNEL32.dll
+_SetEnvironmentVariableA@8          KERNEL32.dll
+_SetEnvironmentVariableW@8          KERNEL32.dll
+_CharUpperBuffA@8                   USER32.dll
+_ShowWindow@8                       USER32.dll
+_GetActiveWindow@0                  USER32.dll
+_MessageBoxA@16                     USER32.dll
+_GetStockObject@4                   GDI32.dll
+_LoadIconA@8                        USER32.dll
+_RegisterClassA@4                   USER32.dll
+_GetSystemMetrics@4                 USER32.dll
+_CreateWindowExA@48                 USER32.dll
+_PeekMessageA@20                    USER32.dll
+_GetMessageA@16                     USER32.dll
+_TranslateMessage@4                 USER32.dll
+_DispatchMessageA@4                 USER32.dll
+_SetCursor@4                        USER32.dll
+_LoadCursorA@8                      USER32.dll
+_DefWindowProcA@16                  USER32.dll
+_CloseHandle@4                      KERNEL32.dll
+_CreateThread@24                    KERNEL32.dll
+_MapVirtualKeyA@8                   USER32.dll
+_GetAsyncKeyState@4                 USER32.dll
+_ReadFile@20                        KERNEL32.dll
+_GetLastError@0                     KERNEL32.dll
+_SetFilePointer@16                  KERNEL32.dll
+_CreateFileA@28                     KERNEL32.dll
+_WriteFile@20                       KERNEL32.dll
+_ExitProcess@4                      KERNEL32.dll
+_GetEnvironmentStrings@0            KERNEL32.dll
+_GetVersion@0                       KERNEL32.dll
+_GetModuleFileNameA@12              KERNEL32.dll
+_GetCommandLineA@0                  KERNEL32.dll
+_GetCommandLineW@0                  KERNEL32.dll
+_GetModuleHandleA@4                 KERNEL32.dll
+
+
+                        +--------------------+
+                        |   Libraries Used   |
+                        +--------------------+
+
+
+
+                        +-----------------------+
+                        |   Linker Statistics   |
+                        +-----------------------+
+
+Stack size:  00010000 (65536.)
+Memory size:  000852f1 (545521.)
+Entry point address: 0040a4f0
+Link time: 00:00.15

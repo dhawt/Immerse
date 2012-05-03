@@ -1,0 +1,41 @@
+..\..\..\WinLayer\WinDIB.hpp(56): Warning! W737: col(34) implicit conversion of pointers to integral types of same size 
+..\..\..\WinLayer\WinDIB.hpp(56): Note! N393: col(34) included from ..\..\..\WinLayer\WinLayer.hpp(11) 
+..\..\..\WinLayer\WinDIB.hpp(56): Note! N393: col(34) included from ..\code\Demo.HPP(15) 
+..\..\..\WinLayer\WinDIB.hpp(56): Note! N393: col(34) included from ..\code\demo.cpp(10) 
+..\..\..\WinLayer\WinDIB.hpp(56): Note! N630: col(34) source conversion type is "unsigned char *" 
+..\..\..\WinLayer\WinDIB.hpp(56): Note! N631: col(34) target conversion type is "char *" 
+..\..\..\WinLayer\WinFile.hpp(16): Warning! W836: col(22) symbol has different type than previous symbol in same declaration 
+..\..\..\WinLayer\WinFile.hpp(16): Note! N837: col(22) companion definition is 'WinFileSys::DefExt' 
+..\..\..\WinLayer\WinFile.hpp(16): Note! N392: col(22) 'char * WinFileSys::DefExt' defined in: ..\..\..\WinLayer\WinFile.hpp(16) (col 13) 
+..\..\..\WinLayer\WinFile.hpp(16): Warning! W836: col(40) symbol has different type than previous symbol in same declaration 
+..\..\..\WinLayer\WinFile.hpp(16): Note! N837: col(40) companion definition is 'WinFileSys::DefExt' 
+..\..\..\WinLayer\WinFile.hpp(16): Note! N392: col(40) 'char * WinFileSys::DefExt' defined in: ..\..\..\WinLayer\WinFile.hpp(16) (col 13) 
+..\..\..\WinLayer\WinFile.hpp(17): Warning! W836: col(26) symbol has different type than previous symbol in same declaration 
+..\..\..\WinLayer\WinFile.hpp(17): Note! N837: col(26) companion definition is 'WinFileSys::Filters' 
+..\..\..\WinLayer\WinFile.hpp(17): Note! N392: col(26) 'char WinFileSys::Filters[270]' defined in: ..\..\..\WinLayer\WinFile.hpp(17) (col 12) 
+..\..\GeomMngr\..\IMR_DirectX.hpp(41): Error! E336: col(38) declaration specifiers are required to declare 'LPDIRECTDRAW4' 
+..\..\GeomMngr\..\IMR_DirectX.hpp(41): Error! E006: col(28) syntax error; probable cause: missing ';' 
+..\..\GeomMngr\..\IMR_DirectX.hpp(44): Error! E336: col(36) declaration specifiers are required to declare 'LPDIRECT3D3' 
+..\..\GeomMngr\..\IMR_DirectX.hpp(44): Error! E498: col(28) syntax error before 'Direct3D'; probable cause: incorrectly spelled type name 
+..\..\GeomMngr\..\IMR_DirectX.hpp(45): Error! E336: col(42) declaration specifiers are required to declare 'LPDIRECT3DDEVICE3' 
+..\..\GeomMngr\..\IMR_DirectX.hpp(45): Error! E498: col(28) syntax error before 'Direct3DDevice'; probable cause: incorrectly spelled type name 
+..\..\GeomMngr\..\IMR_DirectX.hpp(46): Error! E336: col(44) declaration specifiers are required to declare 'LPDIRECT3DVIEWPORT3' 
+..\..\GeomMngr\..\IMR_DirectX.hpp(46): Error! E498: col(28) syntax error before 'Direct3DViewport'; probable cause: incorrectly spelled type name 
+..\..\GeomMngr\..\IMR_DirectX.hpp(49): Error! E336: col(45) declaration specifiers are required to declare 'LPDIRECTDRAWSURFACE4' 
+..\..\GeomMngr\..\IMR_DirectX.hpp(49): Error! E498: col(29) syntax error before 'DDPrimarySurface'; probable cause: incorrectly spelled type name 
+..\..\GeomMngr\..\IMR_DirectX.hpp(50): Error! E336: col(42) declaration specifiers are required to declare 'LPDIRECTDRAWSURFACE4' 
+..\..\GeomMngr\..\IMR_DirectX.hpp(50): Error! E498: col(29) syntax error before 'DDBackSurface'; probable cause: incorrectly spelled type name 
+..\..\GeomMngr\..\IMR_DirectX.hpp(51): Error! E336: col(38) declaration specifiers are required to declare 'LPDIRECTDRAWSURFACE4' 
+..\..\GeomMngr\..\IMR_DirectX.hpp(51): Error! E498: col(29) syntax error before 'DDZBuffer'; probable cause: incorrectly spelled type name 
+..\..\GeomMngr\..\IMR_DirectX.hpp(63): Error! E121: col(5) syntax error 
+..\..\GeomMngr\..\IMR_DirectX.hpp(74): Error! E265: col(31) destructor must be a non-static member function 
+..\..\GeomMngr\..\IMR_DirectX.hpp(74): Error! E029: col(41) symbol 'Shutdown' has not been declared 
+..\..\GeomMngr\..\IMR_DirectX.hpp(81): Error! E336: col(43) declaration specifiers are required to declare 'LPDIRECTDRAWSURFACE4' 
+..\..\GeomMngr\..\IMR_DirectX.hpp(81): Error! E498: col(28) syntax error before 'Get_BackSurface'; probable cause: incorrectly spelled type name 
+..\..\GeomMngr\..\IMR_DirectX.hpp(84): Error! E498: col(41) syntax error before 'Surface'; probable cause: incorrectly spelled type name 
+..\..\GeomMngr\..\IMR_DirectX.hpp(85): Error! E498: col(49) syntax error before 'Surface'; probable cause: incorrectly spelled type name 
+..\..\GeomMngr\..\IMR_DirectX.hpp(86): Error! E336: col(42) declaration specifiers are required to declare 'LPDIRECTDRAWSURFACE4' 
+..\..\GeomMngr\..\IMR_DirectX.hpp(86): Error! E498: col(28) syntax error before 'Create_Surface'; probable cause: incorrectly spelled type name 
+..\..\GeomMngr\..\IMR_DirectX.hpp(87): Error! E336: col(46) declaration specifiers are required to declare 'LPDIRECTDRAWSURFACE4' 
+..\..\GeomMngr\..\IMR_DirectX.hpp(87): Error! E498: col(28) syntax error before 'Create_8BitTexture'; probable cause: incorrectly spelled type name 
+..\..\GeomMngr\..\IMR_DirectX.hpp(88): Error! E133: col(47) too many errors: compilation aborted 

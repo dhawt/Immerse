@@ -1,0 +1,8 @@
+..\code\core\imr_rdfmngr.cpp(11): Warning! W698: col(10) pre-compiled header file being recreated (different #include file) 
+..\code\core\IMR_RDFMngr.hpp(36): Warning! W836: col(12) symbol has different type than previous symbol in same declaration 
+..\code\core\IMR_RDFMngr.hpp(36): Note! N837: col(12) companion definition is 'IMR_RDFListEnt::Type' 
+..\code\core\IMR_RDFMngr.hpp(36): Note! N392: col(12) 'char IMR_RDFListEnt::Type[4]' defined in: ..\code\core\IMR_RDFMngr.hpp(35) (col 12) 
+..\code\core\IMR_RDFMngr.hpp(37): Warning! W836: col(12) symbol has different type than previous symbol in same declaration 
+..\code\core\IMR_RDFMngr.hpp(37): Note! N837: col(12) companion definition is 'IMR_RDFListEnt::Type' 
+..\code\core\IMR_RDFMngr.hpp(37): Note! N392: col(12) 'char IMR_RDFListEnt::Type[4]' defined in: ..\code\core\IMR_RDFMngr.hpp(35) (col 12) 
+..\code\core\imr_rdfmngr.cpp(88): Warning! W391: col(10) assignment found in boolean expression 

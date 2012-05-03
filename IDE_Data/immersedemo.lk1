@@ -1,0 +1,2 @@
+FIL quadset.obj,demo.obj
+LIBR ..\..\..\..\dx7sdk\lib\d3dim.lib,..\..\..\..\dx7sdk\lib\ddraw.lib,..\..\..\..\dx7sdk\lib\dsound.lib,..\..\gfxlib\lib\gfxlib.lib,..\..\winlayer\lib\winlayer.lib,imr.lib

@@ -1,0 +1,3 @@
+..\code\callstatus\imr_log.cpp(11): Warning! W697: col(10) pre-compiled header file being recreated (different compile options) 
+..\code\callstatus\imr_log.cpp(113): Warning! W391: col(32) assignment found in boolean expression 
+..\code\callstatus\imr_log.cpp(117): Warning! W391: col(29) assignment found in boolean expression 

@@ -1,0 +1,32 @@
+!define BLANK ""
+c:\code\engines\lib\immerse\demo\target\demo.obj : c:\code\engines\lib\immer&
+se\demo\code\demo.cpp .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\demo\target
+ *wpp386 ..\code\demo.cpp -i=C:\Code\Watcom\h;C:\Code\Watcom\h\nt -w4 -e25 -&
+zq -od -d2 -5r -bt=nt -mf
+
+c:\code\engines\lib\immerse\demo\target\winkey.obj : c:\code\engines\lib\imm&
+erse\demo\code\winkey.cpp .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\demo\target
+ *wpp386 ..\code\winkey.cpp -i=C:\Code\Watcom\h;C:\Code\Watcom\h\nt -w4 -e25&
+ -zq -od -d2 -5r -bt=nt -mf
+
+c:\code\engines\lib\immerse\demo\target\imrdemo.exe : c:\code\engines\lib\im&
+merse\demo\target\demo.obj c:\code\engines\lib\immerse\demo\target\winkey.ob&
+j .AUTODEPEND
+ @c:
+ cd c:\code\engines\lib\immerse\demo\target
+ @%write imrdemo.lk1 FIL demo.obj,winkey.obj
+ @%append imrdemo.lk1 
+!ifneq BLANK ""
+ *wlib -q -n -b imrdemo.imp 
+ @%append imrdemo.lk1 LIBR imrdemo.imp
+!endif
+!ifneq BLANK ""
+ @%append imrdemo.lk1 op resource=
+!endif
+ *wlink name imrdemo d all op inc SYS nt op m op maxe=25 op q op symf @imrde&
+mo.lk1
+

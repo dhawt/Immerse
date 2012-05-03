@@ -1,0 +1,7 @@
+..\code\core\imr_palette.cpp(11): Warning! W698: col(10) pre-compiled header file being recreated (different #include file) 
+..\code\core\imr_palette.cpp(32): Warning! W391: col(18) assignment found in boolean expression 
+..\code\core\imr_palette.cpp(33): Warning! W391: col(16) assignment found in boolean expression 
+..\code\core\imr_palette.cpp(100): Warning! W014: col(2) no reference to symbol 'Err' 
+..\code\core\imr_palette.cpp(100): Note! N392: col(2) '__5gmudaIMR_PaletteEntry Err' in 'void IMR_PaletteInfo::CreateLightTable( void )' defined in: ..\code\core\imr_palette.cpp(53) (col 18) 
+..\code\core\imr_palette.cpp(136): Warning! W014: col(2) no reference to symbol 'Err' 
+..\code\core\imr_palette.cpp(136): Note! N392: col(2) '__5gmudaIMR_PaletteEntry Err' in 'void IMR_PaletteInfo::CreateFogTable( void )' defined in: ..\code\core\imr_palette.cpp(108) (col 18) 
